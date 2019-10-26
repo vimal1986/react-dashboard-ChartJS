@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Bar, Line, Pie} from 'react-chartjs-2';
+import './Chart.css';
 
 class Chart extends Component{
   constructor(props){
@@ -18,10 +19,12 @@ class Chart extends Component{
 
   render(){
     return (
-      <div className="chart">
-        <Bar
+      <div className="flex-container">
+         <div className="bar chart">
+        <Bar 
           data={this.state.chartData}
           options={{
+            maintainAspectRatio: true,
             title:{
               display:this.props.displayTitle,
               text:'Largest Cities In '+this.props.location,
@@ -33,10 +36,12 @@ class Chart extends Component{
             }
           }}
         />
-
+</div>
+<div className="line chart">
         <Line
           data={this.state.chartData}
           options={{
+            maintainAspectRatio: true,
             title:{
               display:this.props.displayTitle,
               text:'Largest Cities In '+this.props.location,
@@ -48,10 +53,12 @@ class Chart extends Component{
             }
           }}
         />
-
+</div>
+<div className="pie chart">
         <Pie
           data={this.state.chartData}
           options={{
+            maintainAspectRatio: true,
             title:{
               display:this.props.displayTitle,
               text:'Largest Cities In '+this.props.location,
@@ -63,6 +70,7 @@ class Chart extends Component{
             }
           }}
         />
+        </div>
       </div>
     )
   }

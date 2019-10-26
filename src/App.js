@@ -47,10 +47,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom"/>
-      </div>
-    );
+      <div>
+       <h1 className="header">Dashboard</h1> 
+       <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" style/>
+       <div className="footer">&copy;</div>
+       </div>  
+         );
   }
 }
 
