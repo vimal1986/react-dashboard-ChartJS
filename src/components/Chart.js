@@ -6,7 +6,8 @@ class Chart extends Component{
   constructor(props){
     super(props);
     this.state = {
-      chartData:props.chartData
+      chartData:props.chartData,
+      chartData1:props.chartData1,
     }
   }
 
@@ -18,6 +19,7 @@ class Chart extends Component{
   }
 
   render(){
+    console.log(this.state.chartData);
     return (
       <div className="flex-container">
          <div className="bar chart">
