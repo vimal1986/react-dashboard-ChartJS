@@ -15,3 +15,8 @@ npm start
 ```bash
 npm run build
 ```
+
+
+## Quick result
+### Feature Distribution
+![Alt text](screenshot/dashboard.png?raw=true "Dashboard")

@@ -18,6 +18,10 @@ class App extends Component {
     this.getChartData();
   }
 
+  componentWillMount(){
+    this.getChartData();
+  }
+
   getChartAPI = (value) =>{
     Get(API.get,value)
       .then(resp => {
@@ -32,10 +36,10 @@ class App extends Component {
   setChartData = (data) => {
     this.setState({
       chartData:{
-        labels: ['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
+        labels: ['basic.4y', 'high.school', 'basic.6y', 'Professional.course', 'Unknown', 'university.degree'],
         datasets:[
           {
-            label:'Population',
+            label:'Bank Marketing status for features_name',
             data:data,
             backgroundColor:[
               'rgba(255, 99, 132, 0.6)',
@@ -56,17 +60,17 @@ class App extends Component {
     // Ajax calls here
     this.setState({
       chartData:{
-        labels: ['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
+        labels: ['basic.4y', 'high.school', 'basic.6y', 'Professional.course', 'Unknown', 'university.degree'],
         datasets:[
           {
-            label:'Population',
+            label:'Emp Rate',
             data:[
-              617594,
-              181045,
-              153060,
-              106519,
-              105162,
-              95072
+              94,
+              45,
+              60,
+              19,
+              62,
+              72
             ],
             backgroundColor:[
               'rgba(255, 99, 132, 0.6)',
@@ -81,17 +85,17 @@ class App extends Component {
           ]
       } ,
       chartData1:{
-        labels: ['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
+        labels: ['basic.4y', 'high.school', 'basic.6y', 'Professional.course', 'Unknown', 'university.degree'],
         datasets:[
           {
-            label:'emp',
+            label:'emp rate',
             data:[
-              617594,
-              181045,
-              153060,
-              106519,
-              105162,
-              95072
+              24,
+              15,
+              10,
+              9,
+              13,
+              2
             ],
             backgroundColor:[
               'rgba(255, 99, 132, 0.6)',
@@ -113,8 +117,8 @@ class App extends Component {
          return (
         <div>
          <h1 className="header">Dashboard</h1> 
-          <Bar chartData={this.state.chartData} location="Emp Rate" legendPosition="bottom" style/> 
-          <Line chartData={this.state.chartData1} location="Var Rate" legendPosition="bottom" style/>
+          <Bar chartData={this.state.chartData} location="Bank Marketing status for features_name Emp Rate" legendPosition="bottom" style/> 
+          <Line chartData={this.state.chartData1} location="Bank Marketing status for features_name Var Rate" legendPosition="bottom" style/>
          <div className="footer">&copy;</div>
          </div>  
            );

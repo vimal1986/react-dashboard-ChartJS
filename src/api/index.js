@@ -9,6 +9,6 @@ export const Get = (url,data) => {
     }}).then((resp) => {
         return resp;
     }).catch((error) => {
-        handleError(error);
+        // handleError(error);
     })
 };
