@@ -20,4 +20,6 @@ npm run build
 ## Quick result
 ### Feature Distribution
 <img src="/screenshot/dashboard1.PNG" alt="My cool logo"/>
-![Alt text](/screenshot/dashboard1.PNG?raw=true "Dashboard")
+<img src="/screenshot/dashboard2.PNG" alt="My cool logo"/>
+<img src="/screenshot/dashboard3.PNG" alt="My cool logo"/>
+<img src="/screenshot/dashboard4.PNG" alt="My cool logo"/>
