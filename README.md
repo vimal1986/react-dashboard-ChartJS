@@ -19,7 +19,6 @@ npm run build
 
 ## Quick result
 ### Feature Distribution
-<img src="/screenshot/dashboard1.PNG" alt="My cool logo"/>
-<img src="/screenshot/dashboard2.PNG" alt="My cool logo"/>
-<img src="/screenshot/dashboard3.PNG" alt="My cool logo"/>
-<img src="/screenshot/dashboard4.PNG" alt="My cool logo"/>
+<img src="/screenshot/dashboard5.PNG" alt="My cool logo"/>
+<img src="/screenshot/dashboard6.PNG" alt="My cool logo"/>
+<img src="/screenshot/dashboard7.PNG" alt="My cool logo"/>

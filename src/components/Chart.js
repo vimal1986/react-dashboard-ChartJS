@@ -29,7 +29,7 @@ class Chart extends Component{
             maintainAspectRatio: true,
             title:{
               display:this.props.displayTitle,
-              text:'Largest Cities In '+this.props.location,
+              text:this.props.location,
               fontSize:25
             },
             legend:{
@@ -46,7 +46,7 @@ class Chart extends Component{
             maintainAspectRatio: true,
             title:{
               display:this.props.displayTitle,
-              text:'Largest Cities In '+this.props.location,
+              text: this.props.location,
               fontSize:25
             },
             legend:{
@@ -63,7 +63,7 @@ class Chart extends Component{
             maintainAspectRatio: true,
             title:{
               display:this.props.displayTitle,
-              text:'Largest Cities In '+this.props.location,
+              text:this.props.location,
               fontSize:25
             },
             legend:{
